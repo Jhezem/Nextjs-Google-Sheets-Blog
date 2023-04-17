@@ -1,7 +1,7 @@
 export default function Index() {
   return (
     <div className="container mt-5">
-      <div className="min-h-[30vh] text-center">
+      <div className="min-h-[20vh] text-center">
         <h3 className="text-4xl mb-5">
           Seguime en mi canal de YouTube, me ayudarías mucho :D
         </h3>
