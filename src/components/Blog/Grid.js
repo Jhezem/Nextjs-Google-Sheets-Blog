@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import Social from "../../components/Social/index";
 
 export default async function Grid({ blogs }) {
   return (
     <>
       <h1 className="text-center text-4xl mb-5">Bienvenidos al blog</h1>
+      <Social />
       <section className="p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {blogs.map((blog) => (
           <article

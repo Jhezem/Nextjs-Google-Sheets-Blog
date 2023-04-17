@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import Social from "../components/Social/index";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -15,7 +16,8 @@ export default function Home() {
       <div className="container">
         <h1 className="text-5xl mb-3">Hola, bienvenido!</h1>
         <h2 className="text-3xl">
-          Este <Link href={"/blog"}>blog</Link> es un ejemplo creado con Nextjs 13 :D y Google Sheets
+          Este <Link href={"/blog"}>blog</Link> es un ejemplo creado con Nextjs
+          13 :D y Google Sheets
         </h2>
       </div>
       <section className="container">
@@ -38,6 +40,9 @@ export default function Home() {
             ver blog
           </Link>
         </div>
+      </section>
+      <section>
+        <Social />
       </section>
     </main>
   );
