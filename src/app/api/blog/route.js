@@ -9,7 +9,7 @@ export async function GET(request) {
     ? `${process.env.GOOGLE_SHEETS_ENDPOINT}?&collection=${collection}&where=uid=${uid}`
     : `${process.env.GOOGLE_SHEETS_ENDPOINT}?&collection=${collection}`;
 
-  const res = await fetch(url, { cache: "no-store" });
+  const res = await fetch(url);
   const data = await res.json();
   return NextResponse.json(data);
 }
